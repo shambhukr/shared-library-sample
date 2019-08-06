@@ -4,6 +4,8 @@ def info(message){
     assert props['fruit'] == 'Apple'
     assert props.size == 'Large'
     assert props.color == 'Green' : "Color should be Red"
+    println "Sample output"
+    println props['fruit']
 }
 
 def warning(message){
