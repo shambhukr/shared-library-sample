@@ -3,9 +3,9 @@ def info(message){
     def props = readJSON file: "${WORKSPACE}/input.json"
     assert props['fruit'] == 'Apple'
     assert props.size == 'Large'
-    assert props.color == 'Green' : "Color should be Red"
     println "Sample output"
-    println props['fruit']
+    println props['fruit']    
+    assert props.color == 'Green' : "Color should be Red"
 }
 
 def warning(message){
